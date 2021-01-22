@@ -2264,7 +2264,7 @@ input[type="file"] {
   }
 
   .form .form-right textarea {
-    width: 255px;
+    width: 265px;
   }
 
   .form-second__text {
@@ -2545,8 +2545,10 @@ input[type="file"] {
     color: $pink;
   }
 
-  .tabs__base-downside .tabs__base-item-3 {
+  .tabs__base-downside .tabs__base-item-3,
+  .tabs__base-downside .tabs__base-item {
     background-color: #212121;
+    padding: 12px 36px;
   }
 
   .tabs__base-downside .tabs__base-div-3 {
@@ -2555,7 +2557,7 @@ input[type="file"] {
   }
 
   .tabs_wrap-3 .tabs__base {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 
   .tabs__base-item-3 {
@@ -2722,6 +2724,7 @@ input[type="file"] {
   .display-none {
     display: none;
   }
+
 }
 
 @media (max-width: 560px) {
