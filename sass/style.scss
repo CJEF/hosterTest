@@ -102,7 +102,7 @@
     position: absolute;
     top: 21px;
     right: 10px;
-    background-image: url(../images/src/down-arrow.svg);
+    background-image: url(../images/dest/down-arrow.svg);
     transform: rotate(270deg);
     width: 14px;
     height: 11px;
@@ -162,7 +162,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url(../images/src/triangle.svg);
+      background-image: url(../images/dest/triangle.svg);
       background-repeat: no-repeat;
       width: 8px;
       height: 9px;
@@ -210,7 +210,7 @@
 
 .top__img:after {
   content: "";
-  background-image: url(../images/src/top-circle.png);
+  background-image: url(../images/dest/top-circle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -225,7 +225,7 @@
 .top__img {
   position: relative;
   padding: 67px 0 0;
-  background-image: url(../images/src/header-bg-1.png);
+  background-image: url(../images/dest/header-bg-1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,7 +247,7 @@
     width: 13px;
     height: 10px;
     transform: translateY(-50%);
-    background-image: url("../images/src/top-arrow.svg");
+    background-image: url("../images/dest/top-arrow.svg");
   }
 }
 
@@ -274,7 +274,7 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url(../images/src/top-circle-2.png);
+    background-image: url(../images/dest/top-circle-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -333,7 +333,7 @@
 
 .lists-2 {
   color: #d3d3d3;
-  background-image: url(../images/src/list-bg-2.png);
+  background-image: url(../images/dest/list-bg-2.webp);
   max-width: 1360px;
   margin: 0 auto;
   @include lists();
@@ -725,7 +725,7 @@
       position: absolute;
       top: 40%;
       right: 3%;
-      background-image: url("../images/src/accordion-arrow.svg");
+      background-image: url("../images/dest/accordion-arrow.svg");
       width: 21px;
       height: 12px;
       transition: all 0.3s;
@@ -793,14 +793,14 @@
     right: -40px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../images/src/slider-next.png);
+    background-image: url(../images/dest/slider-next.png);
   }
 
   .slick-prev {
     top: 50%;
     transform: translateY(-50%);
     left: -40px;
-    background-image: url(../images/src/slider-prev.png);
+    background-image: url(../images/dest/slider-prev.png);
   }
 
   .slick-dots {
@@ -861,7 +861,7 @@
   margin: 130px auto 70px auto;
   position: relative;
   color: #fff;
-  background-image: url(../images/src/questions-bg.png);
+  background-image: url(../images/dest/questions-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1264,7 +1264,7 @@ input[type="file"] {
   }
 
   .wrong__input-item::before {
-    background-image: url(../images/src/wrong.png);
+    background-image: url(../images/dest/wrong.png);
     width: 14px;
     height: 14px;
     top: 25px;
@@ -1272,7 +1272,7 @@ input[type="file"] {
   }
 
   .right__input-item::before {
-    background-image: url(../images/src/right.png);
+    background-image: url(../images/dest/right.png);
     width: 16px;
     height: 13px;
     top: 19px;
@@ -1747,7 +1747,7 @@ input[type="file"] {
 }
 
 .table-2 {
-  background-image: url(../images/src/table-1-bg.png);
+  background-image: url(../images/dest/table-1-bg.webp);
   max-width: 1360px;
   margin: 0 auto;
 
@@ -1918,11 +1918,11 @@ input[type="file"] {
   }
 
   &__buttons-prev {
-    background-image: url(../images/src/slider-prev.png);
+    background-image: url(../images/dest/slider-prev.png);
   }
 
   &__buttons-next {
-    background-image: url(../images/src/slider-next.png);
+    background-image: url(../images/dest/slider-next.png);
   }
 }
 
@@ -2521,7 +2521,7 @@ input[type="file"] {
     position: absolute;
     top: 15px;
     right: 24px;
-    background-image: url(../images/src/select-burger-open.svg);
+    background-image: url(../images/dest/select-burger-open.svg);
     background-repeat: no-repeat;
     width: 17px;
     height: 13px;
@@ -2568,7 +2568,7 @@ input[type="file"] {
     position: absolute;
     top: 13px;
     right: 24px;
-    background-image: url(../images/src/select-close-pink.png);
+    background-image: url(../images/dest/select-close-pink.png);
     background-repeat: no-repeat;
     width: 21px;
     height: 17px;
@@ -2636,13 +2636,13 @@ input[type="file"] {
     position: absolute;
     top: 16px;
     right: 20px;
-    background-image: url("../images/src/select-burger-open.svg");
+    background-image: url("../images/dest/select-burger-open.svg");
     background-repeat: no-repeat;
     width: 17px;
     height: 13px;
   }
   .close-select.first-tab:after {
-    background-image: url("../images/src/select-close-button.png");
+    background-image: url("../images/dest/select-close-button.png");
   }
   .tabs-wrapper .tab {
     padding: 12px 36px;
@@ -2710,11 +2710,11 @@ input[type="file"] {
   }
 
   .close-select.tabs__base-item:after {
-    background-image: url(../images/src/select-close-button.png);
+    background-image: url(../images/dest/select-close-button.png);
   }
 
   .tabs_wrap-3 .close-select.tabs__base-div:after {
-    background-image: url(../images/src/close-button-svg.svg);
+    background-image: url(../images/dest/close-button-svg.svg);
     color: $pink;
   }
   .display-none {
