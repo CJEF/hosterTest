@@ -1,0 +1,67 @@
+@mixin lists() {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0;
+    }
+
+    .lists__title {
+        font-weight: 800;
+    }
+
+    &__bullet,
+    &__numbered {
+        max-width: 440px;
+    }
+
+    .list__bull-item {
+        margin-bottom: 8px;
+        position: relative;
+        list-style: none;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 3px;
+            left: 0;
+            background-image: url(../images/src/list-disc.svg);
+            width: 20px;
+            height: 20px;
+        }
+
+        p {
+            padding-left: 29px;
+        }
+    }
+
+    .list__num {
+        counter-reset: custom;
+    }
+
+    .list__num span,
+    .list__bull span {
+        font-weight: 800;
+    }
+
+    .list__num-item {
+        margin-bottom: 8px;
+        position: relative;
+        list-style: none;
+
+        &::before {
+            position: absolute;
+            content: counter(custom)".";
+            counter-increment: custom;
+            top: 0;
+            left: 0;
+            color: $blue;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+
+        p {
+            padding-left: 20px;
+        }
+    }
+}

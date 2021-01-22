@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot")format("embedded-opentype"),
+        url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+        url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/openSans/OpenSans-Light.eot");
+    src: url("../fonts/openSans/OpenSans-Light.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/openSans/OpenSans-Light.woff") format("woff"),
+        url("../fonts/openSans/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/openSans/open-sans-v17-latin-regular.eot");
+    src: url("../fonts/openSans/open-sans-v17-latin-regular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/openSans/open-sans-v17-latin-regular.woff2") format("woff2"),
+        url("../fonts/openSans/open-sans-v17-latin-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/openSans/OpenSans-SemiBold.eot");
+    src: url("../fonts/openSans/OpenSans-SemiBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/openSans/OpenSans-SemiBold.woff") format("woff"),
+        url("../fonts/openSans/OpenSans-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+        url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/openSans/OpenSans-ExtraBold.eot");
+    src: url("../fonts/openSans/OpenSans-ExtraBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/openSans/OpenSans-ExtraBold.woff") format("woff"),
+        url("../fonts/openSans/OpenSans-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
