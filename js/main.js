@@ -15,7 +15,7 @@ $(document).ready(function () {
     ],
   });
 
-  $(".slick-arrow").clone().appendTo(".slicj-slider");
+  $(".slick-arrow").clone().appendTo(".slick-slider");
 
     $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
     $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
@@ -55,7 +55,7 @@ $(document).ready(function () {
   });
 
   $(".default-option").click(function () {
-    $(this).parent().toggleClass("active");
+      $(this).parent().toggleClass("active");
   });
 
   $(".select-ul li").click(function () {

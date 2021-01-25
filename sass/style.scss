@@ -483,7 +483,8 @@
 
   &-1,
   &-2,
-  &-4 {
+  &-4,
+  &-5 {
     font-size: 18px;
   }
 
@@ -532,7 +533,7 @@
   &-5 {
     border: 3px solid #dc107e;
     background-color: #ffffff;
-    padding: 17px 55px;
+    padding: 17px 66px;
     color: #dc107e;
     border-radius: 25px;
 
@@ -1346,6 +1347,14 @@ input[type="file"] {
   font-size: 17px;
   color: $gray;
 
+
+  .tabs__base-div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90px;
+    white-space: nowrap;
+  }
+
   .hidden-tab {
     display: none;
   }
@@ -1379,10 +1388,12 @@ input[type="file"] {
 
   .tab,
   .tab-2 {
-    padding: 19px 75px 12px;
-    min-width: max-content;
+    padding: 19px 73px 12px;
     transition: all 0.2s;
     border-radius: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     p {
       font-weight: 600;
@@ -2204,6 +2215,14 @@ input[type="file"] {
   .table__inner .table1 th,
   .table__inner .table1 th:first-child {
     padding: 15px;
+  }
+
+  .tabs-wrapper .tabs__base-div {
+    max-width: 100%;
+  }
+
+  .tabs-wrapper .tab-item-2.active {
+    background-color: transparent;
   }
 
   .tabs_wrap-2 .tabs__base-div {
