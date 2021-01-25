@@ -810,7 +810,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0 10px;
 
     li {
       cursor: pointer;
@@ -1892,9 +1892,12 @@ input[type="file"] {
     }
 
     &:after {
+      content: "...";
+      // width: 10px;
+      // height: 3px;
       position: absolute;
-      top: 20px;
-      left: 16.7px;
+      top: 25px;
+      left: 19.5px;
       color: #3b91e6;
     }
   }
@@ -2398,8 +2401,8 @@ input[type="file"] {
   }
 
   .dots__item::after {
-    top: 13px;
-    left: 8px;
+    top: 14px;
+    left: 11px;
   }
 
   .dots__item::before {
@@ -2449,7 +2452,7 @@ input[type="file"] {
     .input__form-checkbox:checked
     + .form__checkbox-label::after {
     transform: rotate(315deg);
-    top: -7.5px;
+    top: 4.5px;
   }
 
   .input__item-group {
@@ -2735,6 +2738,10 @@ input[type="file"] {
 }
 
 @media (max-width: 500px) {
+  .tabs__little-item-3:first-child {
+    min-width: 83.5px;
+  }
+
   .slick-slider .slick-list {
     max-height: 165px;
   }
