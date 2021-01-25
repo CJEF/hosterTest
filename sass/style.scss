@@ -779,6 +779,22 @@
   max-height: 377px;
 }
 
+.slider .slick-arrow.slick-prev_clonned {
+  left: calc(50% - 35px - 89px);
+  top: 98.5%;
+  position: absolute;
+}
+
+.slider .slick-arrow.slick-next_clonned {
+  right: calc(50% - 35px - 89px);
+  top: 98.5%;
+  position: absolute;
+}
+
+.slider .slick-arrow.slick-next_clonned {
+  
+}
+
 .slider {
   position: relative;
   max-width: 980px;
@@ -1068,13 +1084,14 @@
   .form-second {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .form__left {
     display: flex;
+    width: calc(50% - 11px);
     flex-direction: column;
     align-items: center;
-    margin-right: 25px;
 
     input {
       position: relative;
@@ -1089,10 +1106,19 @@
       }
     }
 
+    &-item-3 .form__left-input{
+      margin-bottom: 0;
+    }
+
+    .form__left-input {
+      width: 100%;
+    }
+
     .form__left-item-1,
     .form__left-item-2,
     .form__left-item-3 {
       position: relative;
+      width: 100%;
     }
 
     .form__left-item-1:after {
@@ -1125,9 +1151,13 @@
     }
   }
 
+  .form-right {
+    width: calc(50% - 11px);
+  }
+
   .form-right textarea {
-    width: 281px;
-    height: 185px;
+    height: 100%;
+    width: 100%;
     border-radius: 1px;
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
@@ -1166,7 +1196,7 @@ input[type="file"] {
   font-size: 0;
   color: #343037;
   margin-bottom: 40px;
-  display: inline-block;
+  display: block;
 }
 
 .fa-paperclip:before {
@@ -1326,13 +1356,12 @@ input[type="file"] {
 
   &__right {
     background-color: #e6eef8;
-    max-width: 480px;
-    margin-right: 30px;
+    width: calc(50% - 10px);
   }
 
   &__wrong {
     background-color: #f5e0e9;
-    max-width: 480px;
+    width: calc(50% - 10px);
   }
 }
 
@@ -1359,10 +1388,15 @@ input[type="file"] {
     display: none;
   }
 
+  .tab-ul .tab-item-2,
+  .tab-ul .tab-item {
+    width: 33.3%;
+  }
+
   .tab-item,
   .tab-item-2 {
     min-width: 260px;
-    border-radius: 24px;
+    border-radius: 21px;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -1388,7 +1422,7 @@ input[type="file"] {
 
   .tab,
   .tab-2 {
-    padding: 19px 73px 12px;
+    padding: 19px 30px 12px;
     transition: all 0.2s;
     border-radius: 24px;
     white-space: nowrap;
@@ -2149,10 +2183,6 @@ input[type="file"] {
     min-width: 300px;
   }
 
-  .alerts__right {
-    margin-right: 30px;
-  }
-
   .lists__bullet,
   .lists__numbered {
     margin-right: 40px;
@@ -2335,17 +2365,8 @@ input[type="file"] {
   .slider__inner {
     padding: 50px 0;
   }
-
-  .form .form-right textarea {
-    width: 265px;
-  }
-
   .form-second__text {
     text-align: center;
-  }
-
-  .form__textarea {
-    margin-bottom: 20px;
   }
 
   .form-second,
@@ -2530,6 +2551,10 @@ input[type="file"] {
     height: 50px;
   }
 
+  .form-second {
+    align-items: center;
+  }
+
   .input__item {
     display: flex;
     max-width: 100%;
@@ -2537,7 +2562,15 @@ input[type="file"] {
   }
 
   .form .form__left {
-    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .form .form-right {
+    width: 100%;
+    max-width: 80%;
+    height: 130px;
   }
 
   .prompt-2 {
@@ -2752,7 +2785,7 @@ input[type="file"] {
   }
   .alerts__right,
   .alerts__wrong {
-    max-width: 100%;
+    width: 100%;
   }
   .buttons__inner .buttons-1,
   .buttons__inner .buttons-2,
@@ -3025,5 +3058,25 @@ input[type="file"] {
 @media (max-width: 320px) {
   .questions__form-list {
     max-width: 320px;
+  }
+  .form .form__left,
+  .form .form-right {
+    max-width: 230px;
+  }
+
+  .form .form__left input {
+    padding: 7px 35px 10px 13px;
+  }
+
+  .form .form-right textarea {
+    height: 100%;
+  }
+
+  .form .form-right {
+    height: 100px;
+  }
+
+  .form .form__left .form__left-item:after {
+    top: 17px;
   }
 }

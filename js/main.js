@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $(".slider").slick({
+    // prevArrow:" <button class='slick-prev_clonned slick-arrow_cloned'></button>",
+    // nextArrow:" <button class='slick-next_clonned slick-arrow_cloned'></button>",
     infinite: false,
     dots: true,
     responsive: [
@@ -15,16 +17,17 @@ $(document).ready(function () {
     ],
   });
 
-  $(".slick-arrow").clone().appendTo(".slick");
-
-    $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
-    $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
+    // $(".slick-arrow").clone().appendTo(".slider-1");
+    // $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
+    // $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
+  
 
     $('.slick-prev_clonned').click(function () {
-        $(".slick-slider").slick('slickPrev');
+        $(".slider-1").slick('slickPrev');
     });
+
     $('.slick-next_clonned').click(function () {
-        $(".slick-slider").slick('slickNext');
+        $(".slider-1").slick('slickNext');
     });
 
   $(".accordion__title").on("click", function () {
