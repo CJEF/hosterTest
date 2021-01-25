@@ -15,16 +15,16 @@ $(document).ready(function () {
     ],
   });
 
-  $(".slick-arrow").clone().appendTo(".slick-slider");
+  $(".slick-arrow").clone().appendTo(".slick");
 
     $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
     $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
 
     $('.slick-prev_clonned').click(function () {
-        $(".slider-1").slick('slickPrev');
+        $(".slick-slider").slick('slickPrev');
     });
     $('.slick-next_clonned').click(function () {
-        $(".slider-1").slick('slickNext');
+        $(".slick-slider").slick('slickNext');
     });
 
   $(".accordion__title").on("click", function () {

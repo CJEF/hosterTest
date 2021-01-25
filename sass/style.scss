@@ -2217,6 +2217,45 @@ input[type="file"] {
     padding: 15px;
   }
 
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid $pink;
+  }
+
+  table tr:last-child {
+    border-bottom: none;
+  }
+
+  .table-2__inner table tr {
+    border-bottom: 3px solid #fff;
+  }
+
+  .table-2__inner table tr:last-child {
+    border-bottom: none;
+  }
+
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  .table1 {
+    width: 100%;
+  }
+
+  .table-2__inner .table1 td,
+  .table__inner .table1 td {
+    border-right: none;
+  }
+
   .tabs-wrapper .tabs__base-div {
     max-width: 100%;
   }
