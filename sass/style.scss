@@ -349,7 +349,14 @@
 
 .lists {
   @include lists();
+  
 }
+
+.lists__title.title-5 {
+  margin-bottom: 30px;
+}
+
+
 
 .links {
   &__inner {
@@ -407,33 +414,13 @@
   &-1 {
     color: #ffffff;
     margin-bottom: 20px;
-    background-image: -moz-linear-gradient(
-      0deg,
-      rgb(59, 145, 230) 0%,
-      rgb(157, 68, 181) 100%
-    );
-    background-image: -webkit-linear-gradient(
-      0deg,
-      rgb(59, 145, 230) 0%,
-      rgb(157, 68, 181) 100%
-    );
+    background-image: linear-gradient(to right, #408de4 0%, #8557c1 80%, white 100%);
     // background-image: -ms-linear-gradient( 0deg, rgb(59,145,230) 0%, rgb(157,68,181) 100%);
   }
 
   &-2 {
     color: $gray;
-    background-image: -moz-linear-gradient(
-      0deg,
-      rgb(181, 68, 110) 0%,
-      rgb(157, 68, 181) 100%
-    );
-    background-image: -webkit-linear-gradient(
-      0deg,
-      rgb(181, 68, 110) 0%,
-      rgb(157, 68, 181) 100%
-    );
-    // background-image: -ms-linear-gradient(0deg, rgb(181, 68, 110) 0%, rgb(157, 68, 181) 100%);
-    opacity: 0.302;
+    background-image: linear-gradient(to right, #e9c7d3 0%, #fefdfe 100%); 
     margin-bottom: 20px;
   }
 
@@ -444,7 +431,7 @@
     font-size: 22px;
     text-transform: uppercase;
     background-color: #fff;
-    background-image: linear-gradient(to right, #3b91e6 0%, white 130%);
+    background-image: linear-gradient(to right, #408de4 0%, #8557c1 80%, white 100%);
     font-weight: 800;
   }
 }
@@ -471,7 +458,7 @@
     text-transform: uppercase;
     transition: all 0.2s;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    font-weight: 800;
+    font-weight: 600;
   }
 
   &-3,
@@ -569,6 +556,7 @@
     color: #fff;
   }
 
+
   .form__checkbox-label {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -582,7 +570,7 @@
     -webkit-appearance: none;
     background-color: transparent;
     border: 2px solid #fff;
-    padding: 10px;
+    padding: 9px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -677,6 +665,8 @@
   &__item-group .input__radio-label-2 {
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: flex-start;
   }
 
   &__item-group .input__radio-label:before,
@@ -686,7 +676,7 @@
     background-color: transparent;
     border: 2px solid $gray;
     border-radius: 50%;
-    padding: 11px;
+    padding: 10px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -699,8 +689,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 6.2px;
-    left: 7px;
+    top: 5.5px;
+    left: 6px;
     width: 12px;
     height: 12px;
     background-color: $pink;
@@ -709,7 +699,6 @@
 
   &__item-group .input__item-radio-2:checked + .input__radio-label-2::after {
     background-color: #fff;
-    left: 7px;
   }
 
   &__item-group .input__radio-label-2:before {
@@ -718,6 +707,10 @@
 }
 
 .accordion {
+  &__container {
+    padding: 65px;
+  }
+
   &__item {
     max-width: 980px;
     border: 1px solid rgba(212, 212, 212, 0.45);
@@ -739,7 +732,7 @@
       content: "";
       position: absolute;
       top: 40%;
-      right: 6%;
+      right: 5%;
       background-image: url("../images/dest/accordion-arrow.svg");
       width: 21px;
       height: 12px;
@@ -904,7 +897,7 @@
   }
 
   &__inner {
-    max-width: 655px;
+    max-width: 665px;
     padding: 97px 0 137px;
     margin: 0 auto;
     text-align: center;
@@ -915,7 +908,7 @@
   &__title {
     font-size: 46px;
     font-weight: 800;
-    max-width: 655px;
+    max-width: 665px;
     line-height: 52px;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -1008,6 +1001,9 @@
   line-height: 16px;
   position: relative;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .input__form-checkbox {
@@ -1029,7 +1025,7 @@
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: 13px;
+  margin-right: 17px;
 }
 
 .questions__item-group
@@ -1039,7 +1035,7 @@
   display: block;
   position: absolute;
   top: 5.8px;
-  left: 10px;
+  left: 9px;
   width: 4px;
   height: 10px;
   border: solid #fff;
@@ -1051,6 +1047,7 @@
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 14px;
+  padding: 0 19px;
 }
 
 .form {
@@ -1071,7 +1068,7 @@
   &__title {
     text-transform: uppercase;
     font-size: 46px;
-    max-width: 483px;
+    max-width: 490px;
     margin: 0 auto 35px;
     font-weight: 800;
   }
@@ -1219,26 +1216,24 @@ input[type="file"] {
     cursor: pointer;
 
     li {
-      padding: 15px 35px 13px 15px;
+      padding: 13px 35px 10px 15px;
     }
 
     &::before {
-      content: "";
+      content: url("../images/src/down-chevron.svg");
       position: absolute;
-      width: 8px;
-      height: 8px;
-      top: 21px;
-      right: 14px;
-      border: 3px solid;
-      border-color: transparent transparent #555555 #555555;
-      transform: rotate(-47deg);
+      width: 12px;
+      height: 12px;
+      top: 16px;
+      right: 12px;
+      transform: rotate(0deg);
     }
   }
 
   .select-ul {
     display: none;
     position: absolute;
-    top: 55px;
+    top: 49px;
     left: 0;
     width: 100%;
     border: 1px solid #e6e6e6;
@@ -1256,8 +1251,8 @@ input[type="file"] {
   }
 
   &.active .default-option:before {
-    top: 27px;
-    transform: rotate(-225deg);
+    top: 22px;
+    transform: rotate(180deg);
   }
 
   &.active .select-ul {
@@ -1486,7 +1481,7 @@ input[type="file"] {
 }
 .tabs-wrapper-2 {
   background-image: $pink-gradient;
-  padding: 50px 80px 40px 80px;
+  padding: 40px 80px 50px 80px;
   max-width: 1290px;
   margin: 0 auto;
 
@@ -1758,12 +1753,12 @@ input[type="file"] {
 
       th {
         font-size: 17px;
-        font-weight: 800;
+        font-weight: 700;
         color: #fff;
       }
 
       td {
-        font-weight: 600;
+        font-weight: 400;
       }
 
       tbody {
@@ -1843,12 +1838,12 @@ input[type="file"] {
 
       th {
         font-size: 17px;
-        font-weight: 800;
+        font-weight: 700;
         color: $pink;
       }
 
       td {
-        font-weight: 600;
+        font-weight: 400;
       }
 
       tr {
@@ -2091,7 +2086,7 @@ input[type="file"] {
   }
 
   .tabs-wrapper .tab-2 {
-    padding: 12px 36px;
+    padding: 12px 30px;
   }
 
   .tabs-wrapper .tab-item,
@@ -2365,7 +2360,7 @@ input[type="file"] {
     padding: 50px 0;
   }
   .form-second__text {
-    text-align: center;
+    text-align: left;
   }
 
   .form-second,
@@ -2535,7 +2530,7 @@ input[type="file"] {
   .input__item-group
     .input__item-radio-2:checked
     + .input__radio-label-2::after {
-    top: -6.5px;
+    top: 5.5px;
   }
 
   .input__item-group
@@ -2834,6 +2829,10 @@ input[type="file"] {
     width: 100%;
   }
 
+  .accordion__container {
+    padding: 0 15px;
+  }
+
 }
 
 @media (max-width: 560px) {
@@ -2844,6 +2843,34 @@ input[type="file"] {
 }
 
 @media (max-width: 500px) {
+
+  .select_wrap.active .default-option{
+    border-color: $pink;
+  }
+
+  .select_wrap.active .default-option:before{
+    content: url('../images/src/down-chevron-2.svg');
+    z-index: 5;
+  }
+
+  .questions__item-group .input__form-checkbox:checked+.form__checkbox-label::after {
+    left: 28px;
+  }
+
+  .form__checkbox-label {
+    padding: 0 19px;
+  }
+
+  .list__bull-item {
+    margin-bottom: 15px;
+  }
+  .list__num-item {
+    margin-bottom: 15px;
+  }
+
+  .lists__title.title-5 {
+    margin-bottom: 15px;
+  }
   .tabs__little-item-3:first-child {
     min-width: 83.5px;
   }
@@ -2904,14 +2931,8 @@ input[type="file"] {
     margin: 55px auto 70px auto;
   }
 
-  .questions__item-group {
-    width: 215px;
-    margin: 0 35px;
-    text-align-last: left;
-  }
-
   .form__checkbox-label span {
-    margin-left: 17px;
+    text-align: left;
   }
 
   .questions__form .questions__form-item-1::after,
@@ -2929,7 +2950,7 @@ input[type="file"] {
   }
 
   .form__inner {
-    padding: 50px 20px 50px;
+    padding: 50px 30px 50px;
   }
 
   .questions__number {
@@ -2984,7 +3005,7 @@ input[type="file"] {
   }
 
   .questions__form-paragraph {
-    padding: 0 15px;
+    padding: 0 19px;
   }
 
   .dots__list {
@@ -2999,10 +3020,6 @@ input[type="file"] {
     min-width: 230px;
   }
 
-  .questions__form-paragraph {
-    width: 260px;
-  }
-
   .header__inner {
     padding: 20px 0 22px 0;
   }
@@ -3013,6 +3030,37 @@ input[type="file"] {
 }
 
 @media (max-width: 430px) {
+
+  .slider .slick-dots li {
+    width: 9px;
+    height: 9px;
+  }
+
+  .form__inner .buttons-1 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form .form__left,
+  .form .form-right {
+    max-width: 100%;
+  }
+
+  .form .form__left input {
+    padding: 7px 35px 10px 13px;
+  }
+
+  .form .form-right textarea {
+    height: 100%;
+  }
+
+  .form .form-right {
+    height: 100px;
+  }
+
+  .form .form__left .form__left-item:after {
+    top: 17px;
+  }
 
   .questions__inner {
     padding: 60px 0 80px;
@@ -3034,6 +3082,7 @@ input[type="file"] {
   .form__file-label {
     font-size: 17px;
     margin-bottom: 40px;
+    text-align: left;
   }
 
   .slick-slider .slick-list {
@@ -3058,42 +3107,15 @@ input[type="file"] {
     padding: 15px 37px;
   }
 
-  .form__checkbox-label span {
-    margin-left: 33px;
-  }
-
-  .questions__form-paragraph {
-    margin-left: 18px;
-  }
-
   .top__img-inner:before {
     opacity: 0;
     display: none;
   }
+  
 }
 
 @media (max-width: 320px) {
   .questions__form-list {
     max-width: 320px;
-  }
-  .form .form__left,
-  .form .form-right {
-    max-width: 230px;
-  }
-
-  .form .form__left input {
-    padding: 7px 35px 10px 13px;
-  }
-
-  .form .form-right textarea {
-    height: 100%;
-  }
-
-  .form .form-right {
-    height: 100px;
-  }
-
-  .form .form__left .form__left-item:after {
-    top: 17px;
   }
 }
